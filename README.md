@@ -2,7 +2,7 @@
 
 Deze repository zal CICD as a service aanbieden aan de klant. Zo kan de klant zelfstandig aan de slag gaan om CICD op te zetten via een simpele guide die door de klant gevolgd kan worden. Zo is het mogelijk dat de klant bijvoorbeeld een bepaalde programmeertaal in een placeholder kan invullen en zelf de code aanpassen aan de hand van een eenvoudige guide met code snipets zodat de modulaire pipeline ook zal werken voor een applicatie met een andere soort programmeertaal.
 
-## 1. Het opzetten van een Kubernetes cluster in Azure
+## 1. Het opzetten van een Kubernetes cluster in Azure (a.d.h.v. Terraform)
 
 In dit onderdeel zal er getoond worden hoe je een Kubernetes cluster op kan zetten op een platform naar keuze. In deze guide wordt er voor Azure gekozen en zal er een Azure Kubernetes Service (AKS) opgezet worden.
 
@@ -63,3 +63,20 @@ Open de resource group in *portal.azure* en open de cloud shell (vierkant-achtig
 4. Kies een naam voor een nieuwe storage account: "storageaccountwout", hier kan je dus zelf een naam naar keuze nemen
 5. Kies een naam voor een nieuwe file share: "filesharewout", ook hier kan je dus zelf een naam naar keuze nemen
 6. Click op *create storage*
+
+### 1.5 Verplaats de gegenereerde Kubeconfig file naar `~/.kube/config`
+
+Dit doen we met het commando
+
+```bash
+mv kubeconfig ~/.kube/config
+```
+
+We kunnen nu verifiëren of de worker nodes aangemaakt zijn door het commando `kubectl get nodes` uit te voer. Nu zou je de worker nodes met health status **ready** moeten zien.
+
+> Als alles goed is gegaan is de AKS cluster nu successvol opgezet op Azure.
+
+## 2. Modulaire pipelines configureren
+
+Indien je maar één applicatie wilt deployen via CICD op je Kubernetes cluster dan verwijs ik je naar [`CICD-een-app`](Files/extra-uitleg/CICD-een-app.md), want dan zijn volgende complexere stappen niet nodig.
+
