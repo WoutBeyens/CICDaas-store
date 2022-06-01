@@ -31,3 +31,12 @@ Dit opent een venster in de browser waarin je kan inloggen op het gewenste Azure
 
 Om deze cluster te kunnen opzetten dienen er een aantal bestanden aangemaakt te worden. Deze bestanden kunnen ook gevonden worden in het mapje [`aks-files`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/aks-files).
 
+Dit mapje bevat volgende bestanden:
+
+1. **Variables.tf** - Hier definieren we de variabelen die gebruikt worden in de main.tf
+2. **terraform.tfvars**- Hier declareren we de waarden voor de variabelen
+3. **providers.tf** - Hier declareren we de provider met hun versie
+4. **main.tf** - Dit is de main configuration file met alle resources die aangemaakt moeten worden.
+5. **output.tf** - Exporteert data naar de output file
+
+Voor meer uitleg omtrent deze bestanden klik je op [`Aks-files-explained`](Files/extra-uitleg/Aks-files-explained.md)
