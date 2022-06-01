@@ -1,6 +1,6 @@
 # Extra uitleg: AKS files
 
-De bestanden die in het mapje [`aks-files`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/aks-files) zitten kan je naar je lokale machine clonen en open deze bestanden vervolgens in Visual Studio Code.
+De bestanden die in het mapje [`aks-files`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/Aks-files) zitten kan je naar je lokale machine clonen en open deze bestanden vervolgens in Visual Studio Code.
 
 Dit mapje bevat volgende bestanden:
 
