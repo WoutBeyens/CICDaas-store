@@ -29,4 +29,4 @@ Dit opent een venster in de browser waarin je kan inloggen op het gewenste Azure
 
 ### 1.2 Een aantal nodige bestanden
 
-Om deze cluster te kunnen opzetten dienen er een aantal bestanden aangemaakt te worden. Deze bestanden kunnen ook gevonden worden in het mapje [link to aks files](aks-files).
+Om deze cluster te kunnen opzetten dienen er een aantal bestanden aangemaakt te worden. Deze bestanden kunnen ook gevonden worden in het mapje [aks-files](https://github.com/WoutBeyens/CICDaas-store/tree/main/aks-files).
