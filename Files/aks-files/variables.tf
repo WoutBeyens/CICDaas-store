@@ -1,4 +1,4 @@
-#Hier declareren we de variabelen die we gebruiken in de main.tf
+# Hier declareren we de variabelen die we gebruiken in de main.tf
 variable "resource_group_name" {
   type        = string
   description = "RG name in Azure"
