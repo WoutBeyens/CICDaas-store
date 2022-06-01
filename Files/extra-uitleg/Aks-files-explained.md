@@ -16,6 +16,8 @@ Per bestand wordt er in commentaar uitleg gegeven over onderstaande code.
 
 * Het bestand `providers.tf`:
 
+> In deze file hoef je niets te wijzigen
+
 ```terraform
 # Configureer de Microsoft Azure Provider
 provider "azurerm" {
@@ -34,6 +36,8 @@ terraform {
 ```
 
 * Het bestand `variabels.tf`:
+
+> In deze file hoef je niets te wijzigen
 
 ```terraform
 #Hier declareren we de variabelen die we gebruiken in de main.tf. De variabelen spreken voor zich door de goede naamkeuze en de beschrijving.
