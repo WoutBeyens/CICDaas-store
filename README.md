@@ -29,7 +29,7 @@ Dit opent een venster in de browser waarin je kan inloggen op het gewenste Azure
 
 ### 1.2 Een aantal nodige bestanden
 
-Om deze cluster te kunnen opzetten dienen er een aantal bestanden aangemaakt te worden. Deze bestanden kunnen ook gevonden worden in het mapje [`Aks-files`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/Aks-files).
+Om deze cluster te kunnen opzetten dienen er een aantal bestanden aangemaakt te worden. Deze bestanden kunnen ook gevonden worden in het mapje [`Aks-files.md`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/Aks-files).
 
 Dit mapje bevat volgende bestanden:
 
@@ -39,11 +39,11 @@ Dit mapje bevat volgende bestanden:
 4. **main.tf** - Dit is de main configuration file met alle resources die aangemaakt moeten worden.
 5. **output.tf** - Exporteert data naar de output file
 
-Voor meer uitleg omtrent deze bestanden klik je op [`Aks-files-explained`](Files/extra-uitleg/Aks-files-explained.md)
+Voor meer uitleg omtrent deze bestanden klik je op [`Aks-files-explained.md`](Files/extra-uitleg/Aks-files-explained.md)
 
 ### 1.3 Terraform files uitvoeren
 
-Eens de Terraform files uit [`Aks-files`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/Aks-files) aangepast zijn zoals uitgelegd in [`Aks-files-explained`](Files/extra-uitleg/Aks-files-explained.md) kunnen deze bestanden uitgevoerd worden.
+Eens de Terraform files uit [`Aks-files.md`](https://github.com/WoutBeyens/CICDaas-store/tree/main/Files/Aks-files) aangepast zijn zoals uitgelegd in [`Aks-files-explained`](Files/extra-uitleg/Aks-files-explained.md) kunnen deze bestanden uitgevoerd worden.
 
 Open de bestanden in Visual Studio Code en doe het volgende:
 
@@ -78,5 +78,30 @@ We kunnen nu verifiëren of de worker nodes aangemaakt zijn door het commando `k
 
 ## 2. Modulaire pipelines configureren
 
-Indien je maar één applicatie wilt deployen via CICD op je Kubernetes cluster dan verwijs ik je naar [`CICD-een-app`](Files/extra-uitleg/CICD-een-app.md), want dan zijn volgende complexere stappen niet nodig.
+### 2.1 CICD voor maar één applicatie te deployen op AKS
 
+Indien je maar één applicatie wilt deployen via Github Actions op je AKS cluster dan verwijs ik je naar [`CICD-een-app.md`](Files/extra-uitleg/CICD-een-app.md), want dan zijn volgende complexere stappen niet nodig.
+
+### 2.2 CICD voor meerdere applicaties te deployen op AKS
+
+Als je meer dan één applicatie wilt deployen via Github Actions op je AKS cluster dan verwijs ik je naar [`CICD-meerdere-apps.md`](Files/extra-uitleg/CICD-meerdere-apps.md). 
+
+## 3. DEV/ACC/PRO releases & Approvals toevoegen aan de pipeline
+
+### 3.1 DEV/ACC/PRO releases
+
+[TO DO]
+
+### 3.2 Approvals 
+
+[TO DO]
+
+## 4. Vulverability scans & Testing toevoegen
+
+### 4.1 Vulnerability scans
+
+[TO DO]
+
+### 4.2 Testing
+
+[TO DO]
