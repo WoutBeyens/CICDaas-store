@@ -2,7 +2,7 @@
 
 Deze repository zal CICD as a service aanbieden aan de klant. Zo kan de klant zelfstandig aan de slag gaan om CICD op te zetten via een simpele guide die door de klant gevolgd kan worden. Zo is het mogelijk dat de klant bijvoorbeeld een bepaalde programmeertaal in een placeholder kan invullen en zelf de code aanpassen aan de hand van een eenvoudige guide met code snipets zodat de modulaire pipeline ook zal werken voor een applicatie met een andere soort programmeertaal.
 
-## 1. Het opzetten van een Kubernetes cluster in Azure (a.d.h.v. Terraform)
+## 1. Het opzetten van een Kubernetes cluster in Azure met Terraform
 
 In dit onderdeel zal er getoond worden hoe je een Kubernetes cluster op kan zetten op een platform naar keuze. In deze guide wordt er voor Azure gekozen en zal er een Azure Kubernetes Service (AKS) opgezet worden.
 
@@ -21,7 +21,6 @@ We kunnen de AKS cluster op verschillende manieren opzetten (via de Azure portal
 
 Voor de effectieve AKS deployment volg je de [`AKS-documentatie.md`](Files/extra-uitleg/AKS-documentatie.md) file.
 
-
 ## 2. Modulaire pipelines configureren
 
 ### 2.1 CICD voor maar één applicatie te deployen op AKS
@@ -30,7 +29,7 @@ Indien je maar één applicatie wilt deployen via Github Actions op je AKS clust
 
 ### 2.2 CICD voor meerdere applicaties te deployen op AKS
 
-Als je meer dan één applicatie wilt deployen via Github Actions op je AKS cluster dan verwijs ik je naar [`CICD-meerdere-apps.md`](Files/extra-uitleg/CICD-meerdere-apps.md). 
+Als je meer dan één applicatie wilt deployen via Github Actions op je AKS cluster dan verwijs ik je naar [`CICD-meerdere-apps.md`](Files/extra-uitleg/CICD-meerdere-apps.md).
 
 ## 3. DEV/ACC/PRO releases & Approvals toevoegen aan de pipeline
 
